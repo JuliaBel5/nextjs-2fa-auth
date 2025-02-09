@@ -1,0 +1,141 @@
+@use "variables" as *;
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 560px;
+  width: 516px;
+  background: $bg-color;
+  border-radius: 9px;
+  border: 1px solid $border-color;
+  margin: auto;
+
+  .loginBox {
+    padding-top: 80px;
+    border-radius: 10px;
+    text-align: center;
+    height: 435px;
+    width: 388px;
+  }
+
+  .logo {
+    color: $primary-color;
+    font-weight: 800;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+    word-spacing: 0.3em;
+  }
+
+  .loginTitle {
+    color: $text-color;
+    text-align: center;
+    font-weight: 600;
+    word-spacing: 0.3em;
+  }
+
+  .loginSubtitle {
+    color: $secondary-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    word-spacing: 0.3em;
+    margin-bottom: 35px;
+  }
+
+  .wrapper {
+    margin-top: 35px;
+    width: 388px;
+  }
+
+  .input-wrapper {
+    height: 76px;
+    width: 388px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-wrapper {
+    margin-top: 35px;
+    height: 40px;
+  }
+
+  .input-icon {
+    color: #dedede;
+    background: $bg-color;
+  }
+}
+
+.ant-form-item {
+  margin-bottom: 3px;
+}
+
+.ant-input,
+.ant-input-password,
+.ant-input-outlined {
+  background: $bg-color !important;
+  color: $text-color;
+  border-color: $input-border;
+}
+
+.ant-input:focus,
+.ant-input:hover,
+.ant-input-outlined:hover,
+.ant-input-outlined:focus,
+.ant-input-password:focus,
+.ant-input-password:hover {
+  border-color: $primary-color;
+  color: $text-color;
+}
+
+.ant-input::placeholder,
+.ant-input-password::placeholder {
+  color: $placeholder-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.ant-form-item-explain-error {
+  font-size: 11px;
+  color: #d81f28;
+  text-align: left;
+}
+
+.login-button {
+  background-color: $primary-color;
+  border-radius: 7px;
+}
+
+.login-button:hover {
+  background-color: $primary-hover !important;
+}
+
+.toastify-container .Toastify__toast--success {
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.toast-container {
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.custom-toast {
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.loader .ant-spin-dot i {
+  background-color: $primary-hover;
+}
+.loading-container {
+  display: flex;
+  place-items: center;
+  height: 100dvh;
+}
