@@ -1,0 +1,29 @@
+{
+  "name": "nextjs-2fa-auth",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.66.0",
+    "antd": "^5.23.4",
+    "next": "15.1.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-toastify": "^11.0.3",
+    "sass": "^1.84.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "typescript": "^5"
+  }
+}

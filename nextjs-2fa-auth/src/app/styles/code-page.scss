@@ -1,0 +1,10 @@
+@use "variables" as *;
+.code-input {
+  color: $text-color;
+  background: $bg-color !important;
+
+  .input-icon {
+    color: #dedede;
+    background: $bg-color;
+  }
+}
