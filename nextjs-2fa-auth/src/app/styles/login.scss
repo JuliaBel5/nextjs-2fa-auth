@@ -139,3 +139,9 @@
   place-items: center;
   height: 100dvh;
 }
+
+@media (max-width: 520px) {
+  .loginContainer {
+    width: 98%;
+  }
+}
