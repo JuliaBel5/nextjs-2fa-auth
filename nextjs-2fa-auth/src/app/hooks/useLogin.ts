@@ -37,7 +37,6 @@ interface LoginRequest {
 }
 
 async function mockLoginRequest(values: LoginRequest): Promise<LoginResponse> {
-  console.log("Mock login request:", values);
 
   return new Promise((resolve, reject) => {
     setTimeout(() => {

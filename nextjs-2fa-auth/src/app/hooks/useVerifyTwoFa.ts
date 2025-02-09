@@ -10,8 +10,6 @@ import { useMutation } from "@tanstack/react-query";
 export async function mockVerifyTwoFa(
   code: string
 ): Promise<{ success: boolean }> {
-  console.log("Mock 2FA verification request:", code);
-
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (code === "123456" || code === "aCodeSentFromTheServerShouldBeHere") {

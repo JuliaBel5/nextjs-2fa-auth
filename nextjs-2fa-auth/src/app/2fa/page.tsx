@@ -35,12 +35,7 @@ export default function TwoFactorAuthPage() {
         <Text className="loginSubtitle">Enter verification code</Text>
 
         <div className="wrapper">
-          <Form
-            name="2fa-form"
-            onFinish={onFinish}
-            layout="vertical"
-            initialValues={{ code: "319648" }}
-          >
+          <Form name="2fa-form" onFinish={onFinish} layout="vertical">
             <Form.Item
               name="code"
               rules={[

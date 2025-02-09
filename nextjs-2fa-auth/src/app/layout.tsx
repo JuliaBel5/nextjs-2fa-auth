@@ -3,6 +3,7 @@ import "antd/dist/reset.css";
 import "./globals.scss";
 import "react-toastify/dist/ReactToastify.css";
 import Providers from "@/providers";
+import "@ant-design/v5-patch-for-react-19";
 
 export const metadata: Metadata = {
   title: "Next App with 2FA",

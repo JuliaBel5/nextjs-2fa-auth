@@ -1,12 +1,22 @@
 "use client";
 
-import { Button, Typography } from "antd";
+import { Button, Typography, Spin } from "antd";
 import { useRouter } from "next/navigation";
+import { useAuthCheck } from "./hooks/useAuthCheck";
 
 const { Title, Text } = Typography;
 
 export default function HomePage() {
+  const { loading } = useAuthCheck();
   const router = useRouter();
+
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <Spin size="large" className="loader" />
+      </div>
+    );
+  }
 
   return (
     <div className="loginContainer">
